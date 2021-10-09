@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div th:fragment="main">
+    <header>
+        <h1 th:text="${currentPage}">Current Page</h1>
+
+        <a th:href="@{/index}">Weather</a>
+        <a th:href="@{/about}">About</a>
+        <a th:href="@{/help}">Help</a>
+    </header>
+</div>
+
+</body>
+</html>

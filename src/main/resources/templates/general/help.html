@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html lang="en"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      th:with="currentPage='Help'"
+      layout:decorate="~{layouts/main}">
+<head>
+    <title>Help</title>
+</head>
+<body>
+<div class="main-content">
+    {{>header}}
+    <p>{{helpText}}</p>
+</div>
+
+{{>footer}}
+</body>
+
+</html>
